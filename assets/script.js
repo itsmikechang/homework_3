@@ -5,9 +5,17 @@ var symbolsEl = document.getElementById('symbols');
 var resultsEl = document.getElementById('results');
 var generateEl = document.getElementById('generate');
 
-var randoFunc = {
+var randomFunc = {
     lower: grabRandomLower,
-    lower: grabRandomUpper,
-    lower: grabRandomNumber,
-    lower: grabRandomSymbol,
+    // upper: grabRandomUpper,
+    // number: grabRandomNumber,
+    // symbol: grabRandomSymbol
 }
+
+function grabRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random()
+    * 26) + 97);
+}
+
+console.log(grabRandomLower());
+
