@@ -1,11 +1,13 @@
-body {
-	background-color: #3B3B98;
-	color: #fff;
-	display: flex;
-	font-family: 'Muli', sans-serif;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	min-height: 100vh;
+var upperEl = document.getElementById('upper');
+var lowerEl = document.getElementById('lower');
+var numbersEl = document.getElementById('numbers');
+var symbolsEl = document.getElementById('symbols');
+var resultsEl = document.getElementById('results');
+var generateEl = document.getElementById('generate');
+
+var randoFunc = {
+    lower: grabRandomLower,
+    lower: grabRandomUpper,
+    lower: grabRandomNumber,
+    lower: grabRandomSymbol,
 }
